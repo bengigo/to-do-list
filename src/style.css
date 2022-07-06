@@ -16,8 +16,8 @@ body {
 
 section {
   border: solid;
-  /* margin: auto; */
-  width: 30vw;
+  margin: 20vh auto;
+  width: 430px;
 }
 
 #list-title {
