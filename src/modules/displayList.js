@@ -1,19 +1,19 @@
-import toDos from './tasks.js';
+// import toDos from './tasks.js';
 
-export default function displayList() {
-  const listContainer = document.querySelector('#list');
+// export default function displayList() {
+//   const listContainer = document.querySelector('#list');
 
-  const orderedTask = toDos.sort((a, b) => a.index - b.index);
+//   const orderedTask = toDos.sort((a, b) => a.index - b.index);
 
-  orderedTask.forEach((task, index) => {
-    listContainer.innerHTML += `
-            <li>
-              <div class="task-info">
-                <input type="checkbox" id="${orderedTask[index].index}">
-                <label for="${orderedTask[index].index}">${orderedTask[index].description}</label>
-              </div>
-              <span class="material-symbols-outlined">more_vert</span>
-            </li>
-        `;
-  });
-}
+//   orderedTask.forEach((task, index) => {
+//     listContainer.innerHTML += `
+//             <li>
+//               <div class="task-info">
+//                 <input type="checkbox" id="${orderedTask[index].index}">
+//                 <label for="${orderedTask[index].index}">${orderedTask[index].description}</label>
+//               </div>
+//               <span class="material-symbols-outlined">more_vert</span>
+//             </li>
+//         `;
+//   });
+// }
