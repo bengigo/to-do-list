@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -24,14 +25,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-}
-
-h1 {
 }
 
 ::placeholder {
-    font-style: italic;
+  font-style: italic;
 }
 
 #input-field {
@@ -42,8 +39,12 @@ h1 {
 }
 
 input {
-    background-color: white;
-    border: none;
+  background-color: white;
+  border: none;
+}
+
+input:checked + label {
+  text-decoration: line-through;
 }
 
 ul {
@@ -58,5 +59,4 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
