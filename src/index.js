@@ -6,7 +6,7 @@ const toDos = [
     {
         description: 'Finish list structure',
         completed: false,
-        index: 0,
+        index: 5,
     },
     {
         description: 'Load dishes',
@@ -27,6 +27,11 @@ const toDos = [
         description: 'Do yoga',
         completed: false,
         index: 2,
+    },
+    {
+        description: 'Water plants',
+        completed: false,
+        index: 0,
     }
 ]
 
