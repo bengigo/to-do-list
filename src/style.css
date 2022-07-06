@@ -17,6 +17,9 @@ body {
 section {
   margin: 20vh auto;
   width: 430px;
+  -webkit-box-shadow: -1px 9px 14px 5px rgba(163, 160, 161, 0.72);
+  -moz-box-shadow: -1px 9px 14px 5px rgba(163, 160, 161, 0.72);
+  box-shadow: -1px 9px 14px 5px rgba(163, 160, 161, 0.722);
 }
 
 #list-title {
