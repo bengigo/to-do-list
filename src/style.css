@@ -28,6 +28,16 @@ section {
   box-shadow: -1px 9px 14px 5px rgba(163, 160, 161, 0.722);
 }
 
+#message-display {
+  height: 50px;
+  background-color: white;
+  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
 #list-title {
   background-color: white;
   display: flex;

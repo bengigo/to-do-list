@@ -1,4 +1,4 @@
-import toDos from "./tasks";
+import toDos from './tasks.js';
 
 export default class Task {
   constructor(description) {
@@ -9,37 +9,36 @@ export default class Task {
   }
 
   static add() {
-    const taskInput = document.querySelector("#task-input");
-    const addIcon = document.querySelector("#add");
-    const messageBox = document.querySelector("#message-display");
-    messageBox.style.display = "none";
+    const taskInput = document.querySelector('#task-input');
+    const addIcon = document.querySelector('#add');
+    const messageBox = document.querySelector('#message-display');
+    messageBox.style.display = 'none';
 
-    addIcon.addEventListener("click", () => {
+    addIcon.addEventListener('click', () => {
       let toDos = [];
-      toDos = JSON.parse(localStorage.getItem("toDos") || "[]");
-      if (taskInput.value !== "") {
+      toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
+      if (taskInput.value !== '') {
         const newTask = new Task(taskInput.value);
         toDos.push(newTask);
         toDos.forEach((obj, i) => {
           obj.index = i + 1;
         });
-        localStorage.setItem("toDos", JSON.stringify(toDos));
-        taskInput.value = "";
+        localStorage.setItem('toDos', JSON.stringify(toDos));
+        taskInput.value = '';
         window.location.reload();
       } else {
-        messageBox.style.display = "flex";
+        messageBox.style.display = 'flex';
         messageBox.innerText = "You didn't write anything!";
-        messageBox.style.color = "tomato";
+        messageBox.style.color = 'tomato';
       }
       console.log('hey');
       console.log(toDos);
-
     });
   }
 
   static display() {
-    const listContainer = document.querySelector("#list");
-    let toDos = JSON.parse(localStorage.getItem("toDos") || "[]");
+    const listContainer = document.querySelector('#list');
+    const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
     console.log(toDos);
     if (toDos.length > 0) {
       toDos.forEach((task) => {

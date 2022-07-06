@@ -1,6 +1,19 @@
 import './style.css';
-import displayList from './modules/displayList.js';
+import Task from './modules/taskClass.js';
 
+Task.display();
 
+Task.add();
 
-displayList();
+// planning of the js structure including modules
+
+// display
+
+// add
+
+// remove
+// reorder inside remove
+
+// edit
+
+// change completed property when completed
