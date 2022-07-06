@@ -11,3 +11,23 @@ body {
   background-color: #f6f6f6;
 }
 
+section {
+  border: solid;
+  margin: auto;
+}
+
+#list-title {
+  background-color: pink;
+}
+
+#input-field {
+  background-color: darkkhaki;
+}
+
+ul {
+  background-color: honeydew;
+}
+
+li:nth-child(odd) {
+  background-color: white;
+}
