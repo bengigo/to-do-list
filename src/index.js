@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import './style.css';
+import displayList from './modules/displayList.js';
 
-const todos = [
+const toDos = [
     {
         description: 'Finish list structure',
         completed: false,
@@ -28,3 +29,7 @@ const todos = [
         index: 2,
     }
 ]
+
+export default toDos;
+
+displayList();
