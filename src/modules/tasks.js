@@ -1,6 +1,3 @@
-import './style.css';
-import displayList from './modules/displayList.js';
-
 const toDos = [
   {
     description: 'Finish list structure',
@@ -35,5 +32,3 @@ const toDos = [
 ];
 
 export default toDos;
-
-displayList();
