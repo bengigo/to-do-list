@@ -1,13 +1,12 @@
-import toDos from "../index.js";
+import toDos from './tasks.js';
 
 export default function displayList() {
-    const listContainer = document.querySelector('#list');
+  const listContainer = document.querySelector('#list');
 
-    const orderedTask = toDos.sort((a, b) => a.index - b.index);
-    console.log(orderedTask);
+  const orderedTask = toDos.sort((a, b) => a.index - b.index);
 
-    orderedTask.forEach((task, index) => {
-        listContainer.innerHTML += `
+  orderedTask.forEach((task, index) => {
+    listContainer.innerHTML += `
             <li>
               <div class="task-info">
                 <input type="checkbox" id="${orderedTask[index].index}">
@@ -16,5 +15,5 @@ export default function displayList() {
               <span class="material-symbols-outlined">more_vert</span>
             </li>
         `;
-    });
+  });
 }
