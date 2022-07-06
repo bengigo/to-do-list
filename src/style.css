@@ -20,7 +20,7 @@ section {
 }
 
 #list-title {
-  background-color: pink;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,11 +49,7 @@ input:checked + label {
 }
 
 ul {
-  background-color: honeydew;
-}
-
-li:nth-child(odd) {
-  background-color: gainsboro;
+  background-color: white;
 }
 
 li {
