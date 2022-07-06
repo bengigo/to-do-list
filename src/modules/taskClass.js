@@ -11,8 +11,8 @@ export default class Task {
   static add() {
     const taskInput = document.querySelector("#task-input");
     const addIcon = document.querySelector("#add");
-    // will add error message
-    // will add success message
+    const messageBox = document.querySelector('#message-display');
+    messageBox.style.display = 'none';
 
     addIcon.addEventListener("click", () => {
       if (taskInput.value !== '') {
@@ -20,8 +20,14 @@ export default class Task {
         toDos.push(newTask);
         console.log(toDos);
         localStorage.setItem('toDos', JSON.stringify(toDos));
+        taskInput.value = '';
+        messageBox.style.display = 'flex';
+        messageBox.innerText = 'Added';
+        messageBox.style.color = 'green';
       } else {
-        alert('invalid input');
+        messageBox.style.display = 'flex';
+        messageBox.innerText = 'You didn\'t write anything!';
+        messageBox.style.color = 'tomato';
       }
     });
   }
