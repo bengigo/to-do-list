@@ -62,3 +62,15 @@ li {
   justify-content: space-between;
   border-bottom: 1px solid rgba(163, 160, 161, 0.722);
 }
+
+#clear {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+}
+
+#clear:hover {
+  text-decoration: underline;
+}
