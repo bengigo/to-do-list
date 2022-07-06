@@ -15,7 +15,6 @@ body {
 }
 
 section {
-  border: solid;
   margin: 20vh auto;
   width: 430px;
 }
@@ -25,6 +24,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
 }
 
 ::placeholder {
@@ -36,6 +36,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
 }
 
 input {
@@ -59,4 +60,5 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
 }
