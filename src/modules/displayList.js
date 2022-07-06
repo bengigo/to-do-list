@@ -9,7 +9,7 @@ export default function displayList() {
     orderedTask.forEach((task, index) => {
         listContainer.innerHTML += `
             <li>
-              <div>
+              <div class="task-info">
                 <input type="checkbox" id="${orderedTask[index].index}">
                 <label for="${orderedTask[index].index}">${orderedTask[index].description}</label>
               </div>
