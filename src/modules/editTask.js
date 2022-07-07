@@ -10,7 +10,7 @@ export default function editTask() {
       task.style.backgroundColor = 'white';
       const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
       toDos.forEach((obj) => {
-        if (obj.index === task.id) {
+        if (obj.index.toString() === task.id) {
           obj.description = task.value;
           localStorage.setItem('toDos', JSON.stringify(toDos));
         }
