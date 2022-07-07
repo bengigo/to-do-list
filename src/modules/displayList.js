@@ -1,8 +1,6 @@
-import Task from "./taskClass.js";
-
 export default function displayList() {
-  const listContainer = document.querySelector("#list");
-  const toDos = JSON.parse(localStorage.getItem("toDos") || "[]");
+  const listContainer = document.querySelector('#list');
+  const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
   if (toDos.length > 0) {
     toDos.forEach((task) => {
       listContainer.innerHTML += `

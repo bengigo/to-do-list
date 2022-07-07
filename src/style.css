@@ -70,8 +70,9 @@ input {
   height: 50px;
 }
 
-label {
+.editable {
   margin-left: 7px;
+  width: 350px;
 }
 
 input:checked + label {
@@ -107,4 +108,3 @@ li {
 #clear:hover {
   text-decoration: underline;
 }
-
