@@ -12,7 +12,7 @@ export default function displayList() {
                                 <input type="checkbox" id="${task.index}">
                                 <label for="${task.index}">${task.description}</label>
                               </div>
-                              <span class="material-symbols-outlined">more_vert</span>
+                              <span class="material-symbols-outlined">delete</span>
                             </li>
                         `;
     });
