@@ -8,6 +8,7 @@ export default function interactions() {
       toDos.forEach((obj) => {
         if (e.target.classList.contains(obj.index)) {
           obj.completed = true;
+          e.target.checked = true;
           localStorage.setItem('toDos', JSON.stringify(toDos));
         }
       });
