@@ -75,7 +75,7 @@ input {
   width: 350px;
 }
 
-input:checked + label {
+input:checked + .editable {
   text-decoration: line-through;
 }
 
