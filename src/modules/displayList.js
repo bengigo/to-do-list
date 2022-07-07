@@ -6,7 +6,7 @@ export default function displayList() {
       listContainer.innerHTML += `
                             <li >
                               <div class="task-info">
-                                <input type="checkbox" >
+                                <input class="checkbox ${task.index}" type="checkbox">
                                 <input id="${task.index}" class="editable" value="${task.description}"></input>
                               </div>
                               <span id="${task.id}" class="delete material-symbols-outlined">delete</span>
