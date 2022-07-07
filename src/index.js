@@ -1,10 +1,14 @@
 import './style.css';
-import Task from './modules/taskClass.js';
+// import Task from './modules/taskClass.js';
+import addToList from './modules/add.js';
+import displayList from './modules/displayList';
+import deleteFromList from './modules/delete';
 
-Task.display();
+addToList();
 
-Task.add();
+displayList();
 
+deleteFromList();
 // planning of the js structure including modules
 
 // display

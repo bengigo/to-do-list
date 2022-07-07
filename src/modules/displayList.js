@@ -3,16 +3,15 @@ import Task from "./taskClass.js";
 export default function displayList() {
   const listContainer = document.querySelector("#list");
   const toDos = JSON.parse(localStorage.getItem("toDos") || "[]");
-  console.log(toDos);
   if (toDos.length > 0) {
     toDos.forEach((task) => {
       listContainer.innerHTML += `
-                            <li>
+                            <li >
                               <div class="task-info">
                                 <input type="checkbox" id="${task.index}">
                                 <label for="${task.index}">${task.description}</label>
                               </div>
-                              <span class="material-symbols-outlined">delete</span>
+                              <span id="${task.id}" class="delete material-symbols-outlined">delete</span>
                             </li>
                         `;
     });
