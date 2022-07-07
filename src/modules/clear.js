@@ -1,19 +1,15 @@
 export default function clearCompleted() {
-    const clearButton = document.querySelector('#clear');
-    
-    clearButton.addEventListener('click', (e) => {
-        e.preventDefault();
+  const clearButton = document.querySelector('#clear');
 
-        let toDos = [];
-        toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
-        toDos = toDos.filter((task) => task.completed !== true);
+  clearButton.addEventListener('click', (e) => {
+    e.preventDefault();
 
-        localStorage.setItem('toDos', JSON.stringify(toDos));
+    let toDos = [];
+    toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
+    toDos = toDos.filter((task) => task.completed !== true);
 
-        window.location.reload();
+    localStorage.setItem('toDos', JSON.stringify(toDos));
 
-
-        console.log(toDos);
-
-    })
+    window.location.reload();
+  });
 }
