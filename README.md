@@ -12,6 +12,9 @@
 - JAVASCRIPT
 - WEBPACK
 
+## Live Demo
+
+[Live Demo Link](https://bengigo.github.io/to-do-list/).
 
 ## Getting Started
 
