@@ -1,13 +1,13 @@
 export default function displayList() {
-  const listContainer = document.querySelector("#list");
-  const toDos = JSON.parse(localStorage.getItem("toDos") || "[]");
-  let checkedStatus = "";
-  listContainer.innerHTML = "";
+  const listContainer = document.querySelector('#list');
+  const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
+  let checkedStatus = '';
+  listContainer.innerHTML = '';
   toDos.forEach((task) => {
     if (task.completed === false) {
-      checkedStatus = "";
+      checkedStatus = '';
     } else {
-      checkedStatus = "checked";
+      checkedStatus = 'checked';
     }
     listContainer.innerHTML += `
                                  <li class="row">
