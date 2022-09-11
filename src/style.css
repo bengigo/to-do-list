@@ -28,75 +28,6 @@ section {
   box-shadow: -1px 9px 14px 5px rgba(163, 160, 161, 0.722);
 }
 
-#message-display {
-  height: 50px;
-  background-color: white;
-  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 15px;
-}
-
-#list-title {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
-  height: 50px;
-  padding: 0 15px;
-}
-
-#input-field {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
-  height: 50px;
-  padding: 0 15px;
-}
-
-::placeholder {
-  font-style: italic;
-}
-
-input {
-  background-color: white;
-  border: none;
-  border-top: 1px solid rgba(163, 160, 161, 0.722);
-  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
-  height: 50px;
-}
-
-.editable {
-  margin-left: 7px;
-  width: 350px;
-}
-
-input:checked + .editable {
-  text-decoration: line-through;
-}
-
-ul {
-  background-color: white;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
-  height: 50px;
-  padding: 0 15px;
-}
-
-.task-info {
-  display: flex;
-  align-items: center;
-}
-
 #clear {
   border: none;
   background-color: transparent;
@@ -107,4 +38,44 @@ li {
 
 #clear:hover {
   text-decoration: underline;
+}
+
+#message-display {
+  background-color: pink;
+}
+
+#list-title {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
+}
+
+.row {
+  height: 50px;
+  padding: 0 15px;
+  border-bottom: 1px solid rgba(163, 160, 161, 0.722);
+}
+
+#input-field {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+input {
+  border: none;
+}
+
+li {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
