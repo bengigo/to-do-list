@@ -10,7 +10,7 @@ export default function displayList() {
       checkedStatus = "checked";
     }
     listContainer.innerHTML += `
-                                 <li >
+                                 <li class="row">
                                    <div class="task-info">
                                      <input id="check${task.index}" class="checkbox" type="checkbox" ${checkedStatus}>
                                      <input id="${task.index}" class="editable" value="${task.description}"></input>
@@ -18,6 +18,5 @@ export default function displayList() {
                                    <span id="${task.id}" class="delete material-symbols-outlined">delete</span>
                                  </li>
                              `;
-
   });
 }
