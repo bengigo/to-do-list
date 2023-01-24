@@ -29,15 +29,15 @@ To get a local copy up and running follow these simple example steps.
 
 ## 👤 Author
 
-- GitHub: [@githubhandle](https://github.com/bengigo)
-- Twitter: [@twitterhandle](https://twitter.com/bengi_gb)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bengi-g-03b883199/)
+- GitHub: [@bengigo](https://github.com/bengigo)
+- Twitter: [@bengi_gb](https://twitter.com/bengi_gb)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bengigenc/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/bengigo/to-do-list/issues).
 
 ## Show your support
 
